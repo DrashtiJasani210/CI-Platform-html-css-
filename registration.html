@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <title>Lost-Password page</title>
+    <title>Registration page</title>
 </head>
 
 <body>
@@ -121,24 +121,33 @@
             <div class="col-md-12 col-lg-4 align-self-center">
                 <form>
 
-                    <div class="lost-pass-form">
-                        <div class="text-center">
-                            <div class="forgot-txt">Forgot Password</div>
-                            <div class="forgot-content">Enter your email address you've using for your account below
-                                and we
-                                will
-                                send you a password reset link</div>
-                        </div>
+                    <div class="registration-form">
+                       <div>First name</div>
+                       <input type="text" class="form-control text-control" id="fname">
+                       
+                       <div class="mgt-21">Last name</div>
+                       <input type="text" class="form-control text-control" id="lname">
 
-                        <div class="input-title">
-                            Email Address
-                        </div>
-                        <input type="email" class="form-control text-control" id="email"
-                            placeholder="Enter your email address...">
-                        <button type="button" class="btn btn-outline-orange reset-btn btn-block w-100">
-                            Reset my Password
+                       <div class="mgt-21">Phone Number</div>
+                       <input type="tel" class="form-control text-control" id="num" maxlength="10">
+
+                       <div class="mgt-21">Email Address</div>
+                       <input type="tel" class="form-control text-control" id="email">
+
+                       <div class="mgt-21">Password</div>
+                       <input type="password" class="form-control text-control" id="pass">
+
+                       <div class="mgt-21">Confirm Password</div>
+                       <input type="password" class="form-control text-control" id="conpass">
+
+                        <button type="button" class="btn btn-outline-orange register-btn btn-block w-100">
+                            Register
                         </button>
-                        <div class="login-link text-center"><a href="">Login</a></div>
+                        <div class="lost-pass mgt-21">Lost your password?</div>
+                        <div class="have-acc">
+                            Already registered?
+                            <a href="">Login now</a>
+                        </div>
                     </div>
 
                 </form>
